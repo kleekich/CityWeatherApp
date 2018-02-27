@@ -13,9 +13,14 @@ export function fetchWeather(city) {
 	
 	const request = axios.get(url);//This returns promise
 
+
+	console.log('Request: ', request);
+
 	return{
 		type: FETCH_WEATHER,
-		payload: request //This is promise
+		payload: request //This is a promise
+		//Since we passed a promise to our payload, Redux-promise, a middleware,
+	// will stop and create a new action 
 	};
 }
 

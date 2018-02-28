@@ -11,7 +11,7 @@ class SearchBar extends Component {
 		this.state = { term: ''};
 
 		/*
-		Override local metho onInputChange
+		Override local metho onInputChange and onFormSubmit 
 		Our callback error can be cleared by binding.(Javascript)
 		*/
 		this.onInputChange = this.onInputChange.bind(this);

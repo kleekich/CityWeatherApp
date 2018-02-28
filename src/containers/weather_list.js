@@ -8,7 +8,7 @@ class WeatherList extends Component {
 
 		return (
 			<tr key={name}>
-				<td>{cityData.city.name}</td>
+				<td>{name}</td>
 			</tr>
 
 		);

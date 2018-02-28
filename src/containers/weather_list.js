@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-
-export default class WeatherList extends Component {
+class WeatherList extends Component {
 
 	render() {
 		return (
@@ -21,9 +20,18 @@ export default class WeatherList extends Component {
 }
 
 
+/*
 
 function mapStateToProps(state){
-
 	return { weather: state.weather };
 	//state.weather came from index.js combineReducers
 }
+We can do this with ES6 syntax as below
+*/
+
+function mapStateToProps({weather}){
+	return { weather }; // { weather } === {weather: weather}
+}
+
+
+export default connect(mapStateToProps)(WeatherList);

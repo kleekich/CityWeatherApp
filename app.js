@@ -1,0 +1,16 @@
+const express = require('express');
+const path = require('path');
+const port = process.env.PORT || 8080;
+const app = express();
+
+
+app.use(express.static(__dirname));
+
+app.get('*', (req, res) => {
+	res.send("HIHIHIHIH");
+	//res.sendFile(path.resolve(__dirname, 'index.html'));
+})
+
+app.listen(port, function(){
+	console.log("Express Server is running at: " + port);
+})

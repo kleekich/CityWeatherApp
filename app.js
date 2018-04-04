@@ -7,8 +7,8 @@ const app = express();
 app.use(express.static(__dirname));
 
 app.get('*', (req, res) => {
-	res.send("HIHIHIHIH");
-	//res.sendFile(path.resolve(__dirname, 'index.html'));
+	
+	res.sendFile(path.resolve(__dirname, 'index.html'));
 })
 
 app.listen(port, function(){

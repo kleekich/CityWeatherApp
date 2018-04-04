@@ -23,6 +23,7 @@ class SearchBar extends Component {
 	}
 
 	onFormSubmit(event){
+		//prevent normal form event(post requrest)
 		event.preventDefault();
 
 

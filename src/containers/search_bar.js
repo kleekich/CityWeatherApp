@@ -11,8 +11,9 @@ class SearchBar extends Component {
 		this.state = { term: ''};
 
 		/*
-		Override local metho onInputChange and onFormSubmit 
-		Our callback error can be cleared by binding.(Javascript)
+		When these functions are invoked, they do not know the context of 
+		'this'. To be called in later time with 'this' keyword, we need to
+		we need to explictly state what 'this' is using bind.
 		*/
 		this.onInputChange = this.onInputChange.bind(this);
 		this.onFormSubmit = this.onFormSubmit.bind(this);

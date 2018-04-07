@@ -6,7 +6,7 @@ This app demonstrates fundamentals of full-stack web application development suc
 
 * Front-end/UI development
 * Server-side development
-* Utilizing different APIs and requesting data from them
+* Back-end development with different APIs and AJAX requrest
 * JSON data manipulation
 * Utilizing several NPM packages(axios, )
 * Deployment
@@ -16,7 +16,6 @@ This app demonstrates fundamentals of full-stack web application development suc
 * You can type any location or city in the U.S.
 * City map and graphs for temperature, pressure, and humidity are available for comparison.
    [Visit CityWeather Here](https://cityweather-kangsik-lee.herokuapp.com/)
-
 
 ## Languages/Tools used
 
@@ -28,10 +27,10 @@ This app demonstrates fundamentals of full-stack web application development suc
 * [Bootstrap](http://getbootstrap.com/2.3.2/) - UI framework
 * [ExpressJS](https://expressjs.com/) - Node.js web framework
 * [Node.js](https://nodejs.org/en/) - Server-side framework
-* [axios](https://www.npmjs.com/package/axios) - AJAX Request
 
 ### APIs and Requests
 * [OpenWeatherMap](http://openweathermap.org/forecast5) - Weather data API
+* [axios](https://www.npmjs.com/package/axios) - AJAX Request
 
 
 ### Deployment
@@ -39,7 +38,8 @@ This app demonstrates fundamentals of full-stack web application development suc
 
 ### Other Packages used
 
-* [redux-promise](https://www.npmjs.com/package/redux-promise) 
+* [redux-promise](https://www.npmjs.com/package/redux-promise) - Middleware for promoise
+* [react-sparklines](https://www.npmjs.com/package/react-sparklines) - Graphs
 
 ## Authors
 
